@@ -211,11 +211,11 @@ span {
 
     .arrow1,
         .arrow2 {
-            top:50%;
+            display: none;
         }
 
     .sign {
-        width: 100px;
+        width: 120px;
         left: 27%;
         bottom: -4%;
     }
