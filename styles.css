@@ -53,12 +53,6 @@ span {
     text-align: center;
     font-size: 1.25em;
     overflow: hidden;
-
-
-    /*
-    background-image: url(img/farm.jpg);
-    background-position: center;
-    background-size: cover;*/
 }
 
 .hero {
@@ -94,6 +88,7 @@ span {
     top:75%;
     left: 40%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     z-index: 7;
 }
 
@@ -161,6 +156,7 @@ span {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     bottom: -4%;
 }
 
@@ -169,6 +165,7 @@ span {
     left:15%;
     top:20%;
     transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
     font-size: 3rem;
     text-shadow: 0 0 2px #fff;
     
@@ -179,6 +176,7 @@ span {
     right:15%;
     top:20%;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     font-size: 3rem;
     text-shadow: 0 0 2px #fff;
 }
@@ -192,12 +190,15 @@ span {
     left: 32.5%;
     z-index: 9;
     transform: translateY(100%);
+    -webkit-transform: translateY(100%);
     transition: all ease-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 
 .i:hover .sign {
     transform: translateY(0%);
+    -webkit-transform: translateY(0%);
 }
 
 .over h3 {
@@ -252,11 +253,13 @@ span {
     width: 100%;
     height: 100%;
     transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
     transition: all ease-in-out 750ms;
 }
 
 .contain:hover .over-yukon {
     transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
 
 .over-red {
@@ -269,11 +272,14 @@ span {
     width: 100%;
     height: 100%;
     transform: translateY(110%);
+    -webkit-transform: translateY(110%);
     transition: all ease-in-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 .contain:hover .over-red {
     transform: translateY(0%);
+    -webkit-transform: translateY(0%);
 }
 
 .over-purp {
@@ -286,11 +292,14 @@ span {
     width: 100%;
     height: 100%;
     transform: translateX(110%);
+    -webkit-transform: translateX(110%);
     transition: all ease-in-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 .contain:hover .over-purp {
     transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
 
 
@@ -304,11 +313,14 @@ span {
     width: 100%;
     height: 100%;
     transform: translateX(110%);
+    -webkit-transform: translateX(110%);
     transition: all ease-in-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 .contain:hover .over-og {
     transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
 
 
@@ -321,9 +333,12 @@ span {
     width: 100%;
     height: 100%;
     transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
     transition: all ease-in-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 .contain:hover .over-peel {
     transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
