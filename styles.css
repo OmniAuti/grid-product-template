@@ -206,17 +206,17 @@ span {
 @media (max-width: 800px) {
 
     .bucket {
-        width: 100px;
+        width: 130px;
     }
 
     .arrow1,
         .arrow2 {
-            top:65%;
+            top:50%;
         }
 
     .sign {
-        width: 75px;
-        left: 18%;
+        width: 90px;
+        left: 27%;
         bottom: -4%;
     }
 
