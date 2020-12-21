@@ -230,6 +230,10 @@ span {
      font-size: 2em;
      }
 
+     .sun {
+        left: 30%;
+     }
+
 }
 
 .over a {
