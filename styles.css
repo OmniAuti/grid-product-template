@@ -205,38 +205,6 @@ span {
     font-size: 2em;
 }
 
-@media (max-width: 800px) {
-
-    .bucket {
-        width: 200px;
-    }
-
-    .arrow1,
-        .arrow2 {
-            display: none;
-        }
-
-    .sign {
-        width: 120px;
-        left: 22%;
-        bottom: -4%;
-    }
-
-    .over h3 {
-        font-size: 1em;
-    }
-
-    
-    h1 {
-     font-size: 2em;
-     }
-
-     .sun {
-        left: 30%;
-     }
-
-}
-
 .over a {
     padding: 1em;
     text-decoration: none;
@@ -342,3 +310,67 @@ span {
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
 }
+
+@media (max-width: 800px) {
+
+    .bucket {
+        width: 200px;
+    }
+
+    .arrow1,
+        .arrow2 {
+            display: none;
+        }
+
+    .sign {
+        width: 120px;
+        left: 22%;
+        bottom: -4%;
+    }
+
+    .over h3 {
+        font-size: 1em;
+    }
+
+    
+    h1 {
+     font-size: 2em;
+     }
+
+     .sun {
+        left: 30%;
+     }
+
+     .contain:active .over-peel {
+    
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+        }
+
+        .contain:active .over-og {
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+        }
+
+        .contain:active .over-purp {
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+        }
+        
+        .contain:active .over-red {
+            transform: translateY(0%);
+            -webkit-transform: translateY(0%);
+        }
+
+        .contain:active .over-yukon {
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+        }
+
+        .i:active .sign {
+            transform: translateY(0%);
+            -webkit-transform: translateY(0%);
+        }
+
+     }
+
