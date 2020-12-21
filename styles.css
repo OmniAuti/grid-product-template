@@ -341,36 +341,5 @@ span {
         left: 30%;
      }
 
-     .contain:active .over-peel {
-    
-            transform: translateX(0%);
-            -webkit-transform: translateX(0%);
-        }
-
-        .contain:active .over-og {
-            transform: translateX(0%);
-            -webkit-transform: translateX(0%);
-        }
-
-        .contain:active .over-purp {
-            transform: translateX(0%);
-            -webkit-transform: translateX(0%);
-        }
-        
-        .contain:active .over-red {
-            transform: translateY(0%);
-            -webkit-transform: translateY(0%);
-        }
-
-        .contain:active .over-yukon {
-            transform: translateX(0%);
-            -webkit-transform: translateX(0%);
-        }
-
-        .i:active .sign {
-            transform: translateY(0%);
-            -webkit-transform: translateY(0%);
-        }
-
      }
 
