@@ -5,15 +5,6 @@
     box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-  }
-
-html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-
 body {
     font-family: 'Oswald', sans-serif;
 }
@@ -21,7 +12,10 @@ body {
 .contain {
     border: 2px solid black;
     position: relative;
+}
 
+a {
+    position: relative;
 }
 
 h1 {
@@ -44,10 +38,19 @@ span {
 
 .grid {
     display: grid;
-    height: 1000px;
-    width: 100%;
-    grid-template: 15% 2fr 1fr 1fr 15% / repeat(4, 1fr);
-    border: 2px solid black;
+    height: 100vh;
+    width: 100vw;
+    grid-template: 2fr 1fr 1fr / repeat(4, 1fr);
+    border: 2px solid #000;
+    border-bottom: none;
+}
+
+.grid-two {
+    height: 300px;
+    display: grid;
+    width: 100vw;
+    grid-template: 2fr 1fr 1fr / repeat(4, 1fr);
+    border-top: none;
 }
 
 .a {
@@ -126,7 +129,7 @@ span {
 }
 
 .e {
-    grid-area: 4/1/6/2;
+    grid-area: 1/1/4/2;
     background-image: url(img/spuds.jpeg);
     background-position: center;
     background-size: cover;
@@ -134,7 +137,7 @@ span {
 }
 
 .f {
-    grid-area: 4/5/6/4;
+    grid-area: 1/4/4/5;
     background-image: url(img/peel.jpg);
     background-position: bottom;
     background-size: cover;
@@ -142,31 +145,31 @@ span {
 }
 
 .i {
-    grid-area: 4/2/6/4;
-    text-align: center;
+    grid-area: 1/2/4/4;
     background-image: url(img/bag.png);
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .i h2 {
-    font-weight: 900;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    align-self: flex-start;
     font-size: 3em;
     color: #62110a;
     text-shadow: 0 0 2px #fff;
-    display: inline-block;
-    margin: 0;
 }
 
 .bucket {
     height: auto;
     width: 275px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    bottom: -4%;
+    align-self: flex-end;
 }
 
 .arrow1 {
@@ -193,12 +196,11 @@ span {
 
 .sign {
     height: auto;
-    width: 200px;
+    width: 100%;
     position: absolute;
-    bottom: -10%;
-    left: 32.5%;
+    bottom: -10px;
     z-index: 9;
-    transform: translateY(100%);
+    transform: translateY(100%) translateX(-50%);
     -webkit-transform: translateY(100%);
     transition: all ease-out 750ms;
     -webkit-transition: all ease-in-out 750ms;
@@ -322,8 +324,12 @@ span {
 
 @media (max-width: 800px) {
 
+    .i h2 {
+        margin-top: 150px;
+    }
+
     .bucket {
-        width: 200px;
+        width: 100%;
     }
 
     .arrow1,
@@ -332,15 +338,13 @@ span {
         }
 
     .sign {
-        width: 120px;
-        left: 22%;
-        bottom: -4%;
+        bottom: 75px;
+        width: 100%;
     }
 
     .over h3 {
         font-size: 1em;
     }
-
     
     h1 {
      font-size: 2em;
@@ -352,3 +356,33 @@ span {
 
      }
 
+     @media (max-width: 650px) {
+
+        .i h2 {
+            margin-top: 75px;
+        }
+    
+        .bucket {
+            width: 100%;
+        }
+    
+        .sign {
+            bottom: 25px;
+            width: 100%;
+        }
+    }
+     @media (max-width: 500px) {
+
+        .i h2 {
+            margin-top: 25px;
+        }
+    
+        .bucket {
+            width: 100%;
+        }
+    
+        .sign {
+            bottom: -5px;
+            width: 100%;
+        }
+    }
