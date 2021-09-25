@@ -1,5 +1,5 @@
 # grid-product-template
-Grid template for product
+Grid template for product or store
 
 
-https://autiomni.github.io/grid-product-template/
+https://omniauti.github.io/grid-product-template/
